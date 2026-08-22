@@ -1,1 +1,134 @@
-<h1>Welcome</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #292d35;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #ffffff;
+        }
+
+        .welcome-card {
+            width: 420px;
+
+            background: #20242b;
+
+            border: 1px solid #11151b;
+            border-radius: 10px;
+
+            padding: 45px 40px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .welcome-card h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #f2f2f2;
+        }
+
+        .welcome-card .line {
+            width: 45px;
+            height: 3px;
+
+            background: #635bff;
+
+            margin: 0 auto 20px;
+
+            border-radius: 3px;
+        }
+
+        .welcome-card p {
+            font-size: 14px;
+            color: #a8a8a8;
+
+            line-height: 1.6;
+
+            margin-bottom: 28px;
+        }
+
+        .welcome-btn {
+            display: inline-block;
+
+            width: 100%;
+
+            padding: 12px 20px;
+
+            background: #635bff;
+            color: #ffffff;
+
+            border: none;
+            border-radius: 4px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: bold;
+
+            transition: 0.2s ease;
+        }
+
+        .welcome-btn:hover {
+            background: #746dff;
+            transform: translateY(-1px);
+        }
+
+        .welcome-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+
+            font-size: 11px;
+            color: #666b75;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-card">
+
+        <h1>Welcome</h1>
+
+        <div class="line"></div>
+
+        <p>
+            Student Exam Performance<br>
+            Prediction System
+        </p>
+
+        <a href="{{ url_for('predict_datapoint') }}" class="welcome-btn">
+            Continue
+        </a>
+
+        <div class="footer-text">
+            Machine Learning Prediction
+        </div>
+
+    </div>
+
+</body>
+
+</html>
