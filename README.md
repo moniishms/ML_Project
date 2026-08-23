@@ -298,21 +298,7 @@ Flask Application
 
 This structure separates different responsibilities of the machine learning workflow and makes the project easier to maintain and extend.
 
----
 
-## 🔮 Future Improvements
-
-Possible improvements include:
-
-- Hyperparameter optimization
-- Additional model evaluation
-- Better model interpretability
-- Improved frontend design
-- Input validation
-- Model performance monitoring
-- Deployment to a cloud platform
-
----
 
 ## 👨‍💻 Author
 
@@ -322,6 +308,4 @@ B.Tech Computer Science Engineering
 
 ---
 
-## 📄 License
 
-This project is intended for educational and learning purposes.
